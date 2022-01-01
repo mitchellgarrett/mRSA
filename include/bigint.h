@@ -9,7 +9,7 @@ typedef struct bigint {
 	uint64_t* data;
 } bigint;
 
-bigint* bigint_create(uint64_t len, const uint64_t data, uint64_t sign);
+bigint* bigint_create(uint64_t len, const uint64_t* data, uint64_t sign);
 
 void bigint_add(uint64_t n, const uint64_t* a, const uint64_t* b, uint64_t* x);
 void bigint_sub(uint64_t n, const uint64_t* a, const uint64_t* b, uint64_t* x);
